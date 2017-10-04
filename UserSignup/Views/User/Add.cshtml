@@ -1,0 +1,35 @@
+﻿<br />
+<style>
+    .error{
+    color:red;
+
+}
+</style>
+<form  method="post">
+    <div class="container">
+        <label for="Username"><b>UserName</b></label>
+        <input type="text" placeholder="Enter UserName" name="Username" value =@ViewBag.user required>
+        <br />
+
+        <label for="Email"><b>Email</b></label>
+        <input typer ="email" placeholder="Email" name="Email" value=@ViewBag.email required />
+        <br />
+
+        
+        <label for="Password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="Password" required>
+        <br />
+
+        <label for="verify"><b>Verify Password</b></label>
+        <input type="password" placeholder="Verify Password" name="verify" required>
+        
+        <br />
+        <label class="error">@ViewBag.error</label>
+        <br />
+
+        <button type="submit" class="signupbtn">Sign Up</button>
+
+            </div>
+        </form>
+
+
